@@ -1,5 +1,6 @@
 <script>
-import Tailwind from "./twind.svelte"
+  import router from "page";
+import Tailwind from "./twind.svelte";
 </script>
 <Tailwind />
 <main>
