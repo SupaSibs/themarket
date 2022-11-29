@@ -1,11 +1,15 @@
-import postcss from './postcss.config.js';
-import { svelte } from '@sveltejs/vite-plugin-svelte'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
+import { qwikVite } from '@builder.io/qwik/optimizer';
+import { qwikCity } from '@builder.io/qwik-city/vite';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [svelte()],
-  css:{
-    postcss
-  }
-})
+export default defineConfig(() => {
+  return {
+    plugins: [qwikCity(), qwikVite(), tsconfigPaths()],
+    preview: {
+      headers: {
+        'Cache-Control': 'public, max-age=600',
+      },
+    },
+  };
+});
