@@ -19,6 +19,7 @@
     "preview": "qwik build preview && vite preview --open",
     "start": "vite --open --mode ssr",
     "qwik": "qwik"
+    "repl": "vite --open --mode ssr --host 0.0.0.0"
   },
   "devDependencies": {
     "@builder.io/qwik": "0.14.1",

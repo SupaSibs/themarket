@@ -1,6 +1,6 @@
 
 hidden = [".config"]
-run = "npm run dev"
+run = "npm run repl"
 
 [[hints]]
 regex = "Error \\[ERR_REQUIRE_ESM\\]"
@@ -11,8 +11,6 @@ channel = "stable-22_05"
 
 [env]
 XDG_CONFIG_HOME = "/home/runner/.config"
-PATH = "/home/runner/$REPL_SLUG/.config/npm/node_global/bin:/home/runner/$REPL_SLUG/node_modules/.bin"
-npm_config_prefix = "/home/runner/$REPL_SLUG/.config/npm/node_global"
 
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", ".config"]
