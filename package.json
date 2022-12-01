@@ -1,6 +1,6 @@
 {
-  "name": "my-qwik-basic-starter",
-  "description": "App with Routing built-in (recommended)",
+  "name": "themarket",
+  "description": "Custom-made marketplace",
   "engines": {
     "node": ">=15.0.0"
   },
@@ -18,7 +18,7 @@
     "lint": "eslint \"src/**/*.ts*\"",
     "preview": "qwik build preview && vite preview --open",
     "start": "vite --open --mode ssr",
-    "qwik": "qwik"
+    "qwik": "qwik",
     "repl": "vite --open --mode ssr --host 0.0.0.0"
   },
   "devDependencies": {
