@@ -4,12 +4,12 @@ import Nav from "../components/navbar/main.tsx
 export default component$(() => {
 useStyles$(globalStyles)
 return (
-<ion-header>
+  <>
 <Nav />
 <main>
 
 </main>
-</ion-header>
+  </>
 )
 	})
 
