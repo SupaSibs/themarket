@@ -7,7 +7,10 @@ return (
   <>
 <Nav />
 <main>
-
+<section>
+<h1 class="uppercase text-2xl 2xs:text-5xl text-black">
+  The marketplace for everyone.
+</h1></section>
 </main>
   </>
 )
