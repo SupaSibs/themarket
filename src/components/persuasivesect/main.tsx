@@ -11,7 +11,7 @@ return (
   <p class="text-xl 2xs:text-2xl text-gray-800 opacity-80">
     {props.description}
 </p>
-  <a href="#">
+  <a href={props.buttonref}>
 <button class="btn blue-600">{props.buttontext}</button></a>
 </section>
   )
